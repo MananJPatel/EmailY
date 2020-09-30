@@ -1,6 +1,6 @@
 const { profile } = require('console');
 const express = require('express');
-const mongoose = require('mongoose'); 
+const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./config/keys');
@@ -14,7 +14,9 @@ const app = express();
 
 app.use(
     cookieSession({
+        maxAge: 30 * 24 * 60 * 60 * 1000,
         
+
     })
 );
 
