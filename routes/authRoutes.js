@@ -8,5 +8,7 @@ app.get(
 );
 
 app.get('/auth/google/callback', passport.authenticate('google'));
-app.get('/api/current_user')
+app.get('/api/current_user',(req,res) => {
+
+})
 };
