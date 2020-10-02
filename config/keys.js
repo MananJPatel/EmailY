@@ -4,5 +4,5 @@ if (process.env.NODE_ENV === 'production') {
 }
 else {
     //in dev
-    module.exports = require('./dev1');
+    module.exports = require('./dev');
 }
