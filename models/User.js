@@ -7,4 +7,4 @@ const userSchema = new Schema ({
     name: String  
 });
 
-mongoose.model('users', userSchema);
+mongoose.model('users', userSchema);// using mongoose
